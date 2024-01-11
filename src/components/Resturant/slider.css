@@ -1,0 +1,17 @@
+.range-slider {
+    width: 100%;
+  }
+  
+  .marks-container {
+    position: relative;
+    height: 20px; /* Adjust the height as needed */
+  }
+  
+  .mark {
+    position: absolute;
+    height: 100%;
+    width: 2px; /* Adjust the width of the mark */
+    background-color: #000; /* Adjust the color of the mark */
+    transform: translateX(-50%);
+  }
+  

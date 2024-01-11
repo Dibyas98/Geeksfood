@@ -1,0 +1,45 @@
+.foot{
+    padding: 5% 0 10% 0;
+    background-color: #F3F4F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: #0D9488;;
+}
+.foot-logo{
+    width: 15%;
+    /* border: 2px solid black; */
+    
+}
+.foot-logo svg{
+    fill: #0D9488;
+}
+.foot ul{
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+}
+.foot li{
+    list-style: none;
+    
+}
+.foot p{
+    width: 30%;
+    text-align: center;
+}
+.foot a{
+    text-decoration: none;
+    color: black;;
+}
+@media screen and (max-width: 426px){
+    .foot ul {
+
+        gap: 0.1rem;
+        width: 90%;
+        /* justify-content: space-between; */
+    }
+    .foot p{
+        width: 80%;
+    }
+}

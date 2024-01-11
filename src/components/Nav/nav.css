@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100vw;
+    display: flex;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    color: #fff;
+}
+.nav-container{
+    display: flex;
+    width: 80%;
+    /* border: 2px solid black; */
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+.menu{
+    width: 35%;
+    margin-top: 4px;
+}
+.menu ul{
+    display: flex;
+    /* border: 2px solid black; */
+    justify-content: space-between;
+    align-items: center;
+    
+
+
+}
+.menu>ul>li{
+    list-style: none;
+    text-transform: capitalize;
+}
+.menu a{
+    text-decoration: none;
+    font-weight: 600;
+    /* color: black; */
+}
+.menu a:active{
+    color: #0095ff;
+}
+.get-started{
+    text-transform: capitalize;
+}
+.get-started button{
+    text-transform: capitalize;
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+.lightback{
+    
+    background-color: black;
+}
+.darkback{
+    
+    background-color: white;
+    
+}
+.lighttext{
+    color: white;
+}
+.darktext{
+    color: black;
+}
+.mobile{
+    display: none;
+}
+@media screen and (max-width: 426px){
+    .menu{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        margin: 5px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        
+    }
+    /* .nav-container{
+    
+        padding: 0;
+    } */
+}
+

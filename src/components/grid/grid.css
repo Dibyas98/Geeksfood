@@ -1,0 +1,39 @@
+
+.grid-card{
+    width:100%;
+    height: auto;
+
+}
+.grid-text{
+    padding: 20px;
+    width: 100%;
+    background-color: #F9FAFB;
+    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+    border-radius: 5px;
+
+}
+.grid-logo{
+    display: flex;
+    padding: 20px;
+    gap: 1.5rem;
+    width: 70%;
+    /* border: 2px solid black; */
+}
+.grid-logo img{
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+}
+.grid-logo h6{
+    font-size: 1rem;
+}
+/* dispaly for mobile */
+@media screen and (max-width: 428px) {
+    .grid-card{
+        width: 90%;
+    }
+    .grid-logo img{
+        width: 30px;
+        height: 30px;
+    }
+}

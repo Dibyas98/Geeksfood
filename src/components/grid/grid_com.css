@@ -1,0 +1,41 @@
+
+.grid{
+    /* width: 85%; */
+    padding:0 10%;
+    justify-content: center;
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: repeat(3,1fr);
+    /* row-gap: 1rem; */
+    /* border: 2px solid black; */
+}
+.left-side{
+    display: grid;
+    justify-items: center;
+}
+.lightback{
+    
+    background-color: black;
+}
+.darkback{
+    
+    background-color: white;
+    
+}
+.lighttext{
+    color: white;
+}
+.darktext{
+    color: black;
+}
+/* dispaly for mobile */
+@media screen and (max-width: 428px) {
+    .grid{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        /* pa */
+        
+    }
+}
