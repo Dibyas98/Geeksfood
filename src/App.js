@@ -49,6 +49,10 @@ function App() {
         {
           path :"/contact",
           element:<Contact mode={mode}></Contact>
+        },
+        {
+          path:'*',
+          element: <Home mode={mode}></Home>
         }
       ]
     }
