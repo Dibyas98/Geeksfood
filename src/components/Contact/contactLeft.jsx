@@ -2,10 +2,10 @@ import React from 'react'
 
 export default function ContactLeft() {
   return (
-    <div className='pt-24 w-1/2 flex flex-col gap-7' >
+    <div className='pt-24 w-1/2 flex flex-col gap-7 contact-right' >
        <p>contact us</p>
        <h1 className='text-5xl font-bold'>GET IN TOUCH WITH US</h1>
-       <p className='w-2/3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius tempor incididunt ut labore et dolore magna aliqua. Ut enim adiqua minim veniam quis nostrud exercitation ullamco</p>
+       <p className='contact-right w-2/3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius tempor incididunt ut labore et dolore magna aliqua. Ut enim adiqua minim veniam quis nostrud exercitation ullamco</p>
        <div className='flex flex-col gap-11'>
         <ul className='flex gap-5 items-center'>
             <li>

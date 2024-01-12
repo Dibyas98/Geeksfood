@@ -117,4 +117,10 @@ nav{
         padding: 0;
     } */
 }
+.show{
+    display: block;
+}
+.hid{
+    display: none;
+}
 

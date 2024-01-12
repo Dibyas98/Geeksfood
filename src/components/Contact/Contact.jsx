@@ -1,6 +1,7 @@
 import React from 'react'
 import ContactLeft from './contactLeft'
 import ContactRight from './contactRight'
+import './contact.css'
 
 export default function Contact({mode}) {
   const theme = {
@@ -8,7 +9,7 @@ export default function Contact({mode}) {
     light:{backgroundColor:'black',color:'white'}
    }
   return (
-    <div className='w-full flex justify-between px-8 h-screen' style={theme[`${mode}`]}>
+    <div className=' contact-cont w-full flex justify-between px-8 h-screen' style={theme[`${mode}`]}>
       <ContactLeft></ContactLeft>
       <ContactRight mode={mode}></ContactRight>
     </div>

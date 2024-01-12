@@ -1,0 +1,10 @@
+@media screen and (max-width:844px) {
+    .contact-cont {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .contact-right{
+        width: 100%;
+    }
+}
