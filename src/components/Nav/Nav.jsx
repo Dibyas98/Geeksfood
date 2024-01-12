@@ -9,14 +9,10 @@ const MenuOption = ['home','quotas','resturant','food','contact'];
 
 
 export default function Nav(props) {
-  const [menu,setmenu] = useState(()=>{
-    const storemenu = localStorage.getItem('current');
-    return (storemenu) ? storemenu :'home' 
-  })
-  const handelMenu = (arg)=>{
-    console.log(menu);
-    setmenu((pre)=>arg)
-    localStorage.setItem("current", arg);
+  const[men,setmen] = useState(props.menul)
+  const handelmen=(ele)=>{
+    setmen(ele);
+    props.menu(ele);
   }
 
 
@@ -34,7 +30,7 @@ export default function Nav(props) {
           {
             MenuOption.map((ele, index) => (
               <li key={new Date()+index}  >
-                <Link to={`/${ele}`} className= {`menu ${props.mode}text`}  style={ele === `${menu}` ? home : {}} onClick={()=>handelMenu(ele)}>{ele}</Link>
+                <Link to={`/${ele}`} className= {`menu ${props.mode}text`} style={ele === `${men}` ? home : {}} onClick={()=>handelmen(ele)}>{ele}</Link>
               </li>
             ))
           
