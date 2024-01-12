@@ -8,7 +8,7 @@ export default function Contact({mode}) {
     light:{backgroundColor:'black',color:'white'}
    }
   return (
-    <div className='w-full flex justify-between px-8 h-full' style={theme[`${mode}`]}>
+    <div className='w-full flex justify-between px-8 h-screen' style={theme[`${mode}`]}>
       <ContactLeft></ContactLeft>
       <ContactRight mode={mode}></ContactRight>
     </div>
