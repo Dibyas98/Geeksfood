@@ -30,7 +30,7 @@ export default function Nav(props) {
           {
             MenuOption.map((ele, index) => (
               <li key={new Date()+index}  >
-                <Link to={ele} className= {`menu ${props.mode}text`} style={ele === `${men}` ? home : {}} onClick={()=>handelmen(ele)}>{ele}</Link>
+                <Link to={`/${ele}`} className= {`menu ${props.mode}text`} style={ele === `${men}` ? home : {}} onClick={()=>handelmen(ele)}>{ele}</Link>
               </li>
             ))
           
