@@ -9,7 +9,7 @@ const MenuOption = ['home','quotas','resturant','food','contact'];
 
 
 export default function Nav(props) {
-  const[men,setmen] = useState('home')
+  const[men,setmen] = useState(props.menul)
   const handelmen=(ele)=>{
     setmen(ele);
     props.menu(ele);

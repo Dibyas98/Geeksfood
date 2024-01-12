@@ -5,13 +5,19 @@ import Footer from './footer/Footer';
 
 export default function Layout({mode,toggle}) {
  
-  const [menu,setmenu] = useState('home')
+  const [menu,setmenu] = useState(()=>{
+    const storemenu = localStorage.getItem('current');
+    return (storemenu) ? storemenu :'home' 
+  })
   const handelMenu = (arg)=>{
+    console.log(menu);
     setmenu((pre)=>arg)
+    localStorage.setItem("current", arg);
   }
+  console.log(menu);
   return (
     <>
-    <Nav mode={mode} toggle={toggle} menu={handelMenu} ></Nav>
+    <Nav mode={mode} toggle={toggle} menu={handelMenu} menul={menu}></Nav>
     <Outlet mode={mode}></Outlet>
     {menu === 'food' || menu === 'contact' ?null :<Footer></Footer>}
     
