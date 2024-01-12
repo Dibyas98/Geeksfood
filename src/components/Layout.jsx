@@ -19,7 +19,7 @@ export default function Layout({mode,toggle}) {
     <>
     <Nav mode={mode} toggle={toggle} menu={handelMenu} menul={menu}></Nav>
     <Outlet mode={mode}></Outlet>
-    {menu === 'food' || menu === 'contact' ?null :<Footer></Footer>}
+    {<Footer></Footer>}
     
     </>
   )
